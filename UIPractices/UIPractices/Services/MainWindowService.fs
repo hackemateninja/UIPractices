@@ -1,18 +1,18 @@
 namespace UIPractices.Services
 
 open System
-open Avalonia
-open Avalonia.Collections
 open Avalonia.Platform
 
 module Helpers =
   open Avalonia.Media.Imaging
-  let createBitMap (path: string): IReadableBitmapImpl =
+  let createBitMap (path: string) =
     let uri = Uri($"avares://UIPractices/Assets/{path}")
-    let assets = AvaloniaLocator.Current.GetService<IAssetLoader>()
-    let asset = assets.Open(uri)
-    new Bitmap(asset)
-
+    try
+        use stream  = AssetLoader.Open(uri)
+        Bitmap.DecodeToWidth(stream, 75)
+    with ex ->
+        printfn "Error al leer la imagen: %s" ex.Message
+        null
 
 
 module MainWindowService =

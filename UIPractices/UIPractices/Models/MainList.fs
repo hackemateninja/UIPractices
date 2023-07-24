@@ -1,14 +1,15 @@
 namespace UIPractices.Models
 
-open Avalonia.Platform
+open Avalonia.Controls
+open Avalonia.Media.Imaging
 
 type MainList =
   {
     Id: int
     TitleText: string
-    ImageLink: IReadableBitmapImpl
+    ImageLink: Bitmap
   }
-  
-  
-  
+
+
+
 

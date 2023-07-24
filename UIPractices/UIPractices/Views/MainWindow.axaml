@@ -1,4 +1,4 @@
-<Window 
+<Window
 xmlns="https://github.com/avaloniaui"
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 xmlns:vm="using:UIPractices.ViewModels"
@@ -33,7 +33,7 @@ ExtendClientAreaToDecorationsHint="True">
       FontSize="20"
       Text="UI PRACTICES"
     />
-    <ItemsControl Items="{Binding ListItems}">
+    <ItemsControl ItemsSource="{Binding ListItems}">
       <ItemsControl.ItemsPanel>
         <ItemsPanelTemplate>
           <WrapPanel VerticalAlignment="Center" HorizontalAlignment="Center" />
@@ -41,7 +41,7 @@ ExtendClientAreaToDecorationsHint="True">
       </ItemsControl.ItemsPanel>
       <ItemsControl.ItemTemplate>
         <DataTemplate>
-          <controls:ButtonItemControl 
+          <controls:ButtonItemControl
             x:Name="ButtonItem"
             Tag="{Binding Id}"
             ImageLink="{Binding ImageLink}"
