@@ -1,0 +1,21 @@
+<Window
+  xmlns="https://github.com/avaloniaui"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  xmlns:vm="clr-namespace:UIPractices.ViewModels"
+  xmlns:views="clr-namespace:UIPractices.Views"
+  mc:Ignorable="d" d:DesignWidth="320" d:DesignHeight="500"
+  Width="320"
+  Height="500"
+  Background="DodgerBlue"
+  Foreground="Azure"
+  WindowStartupLocation="CenterOwner"
+  ExtendClientAreaToDecorationsHint="True"
+  x:DataType="vm:TodoListWindowViewModel"
+  x:Class="UIPractices.Views.TodoListWindow">
+  <Window.DataContext>
+    <vm:TodoListWindowViewModel />
+  </Window.DataContext>
+  <ContentControl Content="{Binding CurrentView}" />
+</Window>

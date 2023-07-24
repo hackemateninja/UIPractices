@@ -1,0 +1,97 @@
+<UserControl 
+  xmlns="https://github.com/avaloniaui"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  xmlns:vm="clr-namespace:UIPractices.ViewModels"
+  mc:Ignorable="d"
+  x:DataType="vm:FlatDashBoardHomeViewModel"
+  x:Class="UIPractices.Views.FlatDashBoardHomeView">
+  <StackPanel>
+    <TextBlock 
+      Text="Discovery" 
+      Foreground="White"
+      FontSize="28"
+      HorizontalAlignment="Left"
+      Margin="0 0 0 20"
+    />
+    <Grid ColumnDefinitions="Auto, Auto">
+      <Border Grid.Column="0" Width="400" Height="200" CornerRadius="10">
+        <Border.Background>
+          <LinearGradientBrush StartPoint="0, 0" EndPoint="1, 2">
+            <GradientStop Color="#5bc3ff" Offset="0.0" />
+            <GradientStop Color="#3aa0ff" Offset="1"/>
+          </LinearGradientBrush>
+        </Border.Background>
+        <Border.Clip>
+          <RectangleGeometry Rect="0, 0, 400, 200"/>
+        </Border.Clip>
+        <Grid>
+          <StackPanel>
+            <TextBlock 
+              Text="World leader&#x0a;in global finance"
+              Foreground="White"
+              TextWrapping="Wrap"
+              FontSize="28"
+              Margin="20 10 10 0"
+            />
+            <TextBlock 
+              Text="Get started today!"
+              Foreground="White"
+              FontSize="18"
+              Margin="20 10 10 0"
+            />
+          </StackPanel>
+          <Image 
+            Width="250" 
+            Height="250" 
+            Source="/Assets/finance.png"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Bottom"
+            Margin="0, 0, -50, -50">
+          </Image>
+        </Grid>
+      </Border>
+      <Border Grid.Column="1"
+        Width="200"
+        Height="200"
+        CornerRadius="10"
+        Margin="60 0 0 0">
+        <Border.Background>
+          <LinearGradientBrush StartPoint="0,0" EndPoint="1, 2">
+            <GradientStop Color="#ffc554" Offset="0.0" />
+            <GradientStop Color="#ffb73a" Offset="1"/>
+          </LinearGradientBrush>
+        </Border.Background>
+      </Border>
+    </Grid>
+    <StackPanel>
+      <TextBlock 
+        Foreground="White"
+        HorizontalAlignment="Left"
+        Margin="0 30 0 20"
+        Text="Most Watched"
+        FontSize="20"
+      />
+      <WrapPanel Orientation="Horizontal">
+        <WrapPanel.Styles>
+          <Style Selector="Border">
+            <Setter Property="Margin" Value="10 10" />
+            <Setter Property="Width" Value="150" />
+            <Setter Property="Height" Value="150" />
+          </Style>
+          <Style Selector="Border:nth-child(1)">
+            <Setter Property="Margin" Value="0, 10, 10, 10"></Setter>
+          </Style>
+          <Style Selector="Border:nth-last-child()">
+            <Setter Property="Margin" Value="10, 10, 0, 10"></Setter>
+          </Style>
+        </WrapPanel.Styles>
+        <Border Background="#844eff" CornerRadius="10"></Border>
+        <Border Background="#4e99ff" CornerRadius="10"></Border>
+        <Border Background="#4eff91" CornerRadius="10"></Border>
+        <Border Background="#ecff4e" CornerRadius="10"></Border>
+      </WrapPanel>
+    </StackPanel>
+  </StackPanel>
+</UserControl>

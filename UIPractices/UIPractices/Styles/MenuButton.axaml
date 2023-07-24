@@ -1,0 +1,36 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Design.PreviewWith>
+    <Border Padding="20">
+      <RadioButton Classes="MenuButton" />
+    </Border>
+  </Design.PreviewWith>
+
+  <Style Selector="RadioButton.MenuButton">
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type RadioButton}">
+          <Grid 
+            VerticalAlignment="Stretch"
+            HorizontalAlignment="Stretch"
+            Background="{TemplateBinding Background}">
+            <TextBlock 
+              Foreground="White"
+              FontSize="14"
+              VerticalAlignment="Center"
+              Text="{TemplateBinding Property=Content}"
+              Margin="50 0 0 0"
+            />
+          </Grid>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+    <Setter Property="Height" Value="50"/>
+    <Setter Property="Width" Value="200"/>
+    <Setter Property="Background" Value="Transparent" />
+    <Setter Property="BorderThickness" Value="0"></Setter>
+  </Style>
+  <Style Selector="RadioButton.MenuButton[IsChecked=true]">
+    <Setter Property="Background" Value="#22202f"></Setter>
+  </Style>
+</Styles>

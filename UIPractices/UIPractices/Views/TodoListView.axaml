@@ -1,0 +1,42 @@
+<UserControl 
+  xmlns="https://github.com/avaloniaui"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  xmlns:vm="clr-namespace:UIPractices.ViewModels"
+  mc:Ignorable="d" d:DesignWidth="320" d:DesignHeight="500"
+  Width="320"
+  Height="500"
+  x:DataType="vm:TodoListViewModel" 
+  x:Class="UIPractices.Views.TodoListView">
+  <UserControl.DataContext>
+    <vm:TodoListViewModel></vm:TodoListViewModel>
+  </UserControl.DataContext>
+  <DockPanel Margin="0 30 0 0">
+    <TextBlock 
+      DockPanel.Dock="Top"
+      TextAlignment="Center"
+      FontSize="24"
+      FontWeight="500"
+      Text="TODO LIST" 
+    />
+    <Button 
+      DockPanel.Dock="Bottom"
+      HorizontalAlignment="Stretch"
+      HorizontalContentAlignment="Center">
+      Add Item
+    </Button>
+    <ItemsControl 
+      Margin="0 20" 
+      Items="{Binding Items}">
+      <ItemsControl.ItemTemplate>
+        <DataTemplate>
+          <CheckBox 
+            Margin="4"
+            IsChecked="{Binding IsChecked}"
+            Content="{Binding Description}"/>
+        </DataTemplate>
+      </ItemsControl.ItemTemplate>
+    </ItemsControl>
+  </DockPanel>
+</UserControl>

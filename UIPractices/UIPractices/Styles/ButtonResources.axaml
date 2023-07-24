@@ -1,0 +1,12 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Prev Button -->
+    <ImageBrush x:Key="PrevAct" Source="/Assets/Icons/PrevAct.png"/>
+    <ImageBrush x:Key="PrevPas" Source="/Assets/Icons/PrevPas.png"/>
+    
+    <!-- Next Button -->
+    <ImageBrush x:Key="NextAct" Source="/Assets/Icons/NextAct.png"/>
+    <ImageBrush x:Key="NextPas" Source="/Assets/Icons/NextPas.png"/>
+    
+</ResourceDictionary>

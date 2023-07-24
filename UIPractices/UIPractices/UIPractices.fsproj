@@ -1,0 +1,58 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<LangVersion>latest</LangVersion>
+		<AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
+	</PropertyGroup>
+
+
+	<ItemGroup>
+		<AvaloniaResource Include="Assets\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Include="Controls\ButtonItemControl.axaml.fs" />
+		<Compile Include="Models\MainList.fs" />
+		<Compile Include="Models\TodoItem.fs" />
+		<Compile Include="Services\MainWindowService.fs" />
+		<Compile Include="Services\TodoListService.fs" />
+		<Compile Include="ViewModels\ViewModelBase.fs" />
+		<Compile Include="ViewModels\MainViewModel.fs" />
+		<Compile Include="ViewModels\TodoListViewModel.fs" />
+		<Compile Include="ViewModels\TodoListAddItemViewModel.fs" />
+		<Compile Include="ViewModels\TodoListWindowViewModel.fs" />
+		<Compile Include="ViewModels\FlatDashBoardHomeViewModel.fs" />
+		<Compile Include="ViewModels\FlatDashBoardDiscoveryViewModel.fs" />
+		<Compile Include="ViewModels\FlatDashBoardViewModel.fs" />
+		<Compile Include="Views\AutoWriteWindow.axaml.fs" />
+		<Compile Include="Views\CalculatorWindow.axaml.fs" />
+		<Compile Include="Views\FlatDashBoardDiscoveryView.axaml.fs">
+		  <DependentUpon>FlatDashBoardDiscoveryView.axaml</DependentUpon>
+		  <SubType>Code</SubType>
+		</Compile>
+		<Compile Include="Views\FlatDashBoardHomeView.axaml.fs" />
+		<Compile Include="Views\FlatDashBoardWindow.axaml.fs" />
+		<Compile Include="Views\SliderWindow.axaml.fs" />
+		<Compile Include="Views\TodoListAddItemView.axaml.fs" />
+		<Compile Include="Views\TodoListView.axaml.fs" />
+		<Compile Include="Views\TodoListWindow.axaml.fs" />
+		<Compile Include="Views\MainWindow.axaml.fs" />
+		<Compile Include="ViewLocator.fs" />
+		<Compile Include="App.axaml.fs" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Avalonia" Version="11.0.0" />
+		<PackageReference Include="Avalonia.Svg.Skia" Version="11.0.0" />
+		<PackageReference Include="Avalonia.Themes.Fluent" Version="11.0.0" />
+		<!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->
+		<PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" Version="11.0.0" />
+		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Assets\Icons\" />
+	  <Folder Include="Assets\Fonts\" />
+	</ItemGroup>
+</Project>

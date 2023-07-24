@@ -1,0 +1,58 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Design.PreviewWith>
+    <StackPanel>
+      <Button Classes="BtnNext" />
+      <Button Classes="BtnPrev" />
+    </StackPanel>
+  </Design.PreviewWith>
+
+   <Style Selector="Button.BtnPrev">
+       <Setter Property="Height" Value="25"/>
+       <Setter Property="Width" Value="25"/>
+       <Setter Property="Margin" Value="10"/>
+       <Setter Property="HorizontalAlignment" Value="Right"/>
+       <Setter Property="VerticalAlignment" Value="Center"/>
+       <Setter Property="UseLayoutRounding" Value="True"/>
+       <Setter Property="ZIndex" Value="2"></Setter>
+       <Setter Property="Cursor" Value="Hand"/>
+       <Setter Property="Template">
+         <ControlTemplate>
+           <Border
+             BorderThickness="0"
+             Background="{DynamicResource PrevPas}"/>
+         </ControlTemplate>
+       </Setter>
+     </Style>
+     <Style Selector="Button.BtnPrev:pointerover>Border">
+       <Setter Property="Background" Value="{DynamicResource PrevAct}"/>
+     </Style>
+     <Style Selector="Button.BtnPrev:pressed>Border">
+       <Setter Property="Background" Value="{DynamicResource PrevAct}"/>
+     </Style>
+     
+     <Style Selector="Button.BtnNext">
+       <Setter Property="Height" Value="25"/>
+       <Setter Property="Width" Value="25"/>
+       <Setter Property="Margin" Value="10"/>
+       <Setter Property="HorizontalAlignment" Value="Right"/>
+       <Setter Property="VerticalAlignment" Value="Center"/>
+       <Setter Property="UseLayoutRounding" Value="True"/>
+       <Setter Property="Cursor" Value="Hand"/>
+       <Setter Property="Template">
+         <Setter.Value>
+           <ControlTemplate>
+             <Border
+               BorderThickness="0"
+               Background="{StaticResource NextPas}"/>
+           </ControlTemplate>
+         </Setter.Value>
+       </Setter>
+     </Style>
+     <Style Selector="Button.BtnNext:pointerover>Border">
+       <Setter Property="Background" Value="{StaticResource NextAct}"/>
+     </Style>
+     <Style Selector="Button.BtnNext:pressed>Border">
+       <Setter Property="Background" Value="{StaticResource NextAct}"/>
+     </Style>
+</Styles>

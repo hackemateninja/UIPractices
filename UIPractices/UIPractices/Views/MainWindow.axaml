@@ -1,0 +1,55 @@
+<Window 
+xmlns="https://github.com/avaloniaui"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+xmlns:vm="using:UIPractices.ViewModels"
+xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+xmlns:controls="clr-namespace:UIPractices.Controls"
+x:Class="UIPractices.Views.MainWindow"
+x:DataType="vm:MainViewModel"
+mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="600"
+WindowStartupLocation="CenterScreen"
+Width="800"
+Height="600"
+Background="#185efaFA"
+Icon="/Assets/avalonia-logo.ico"
+Title="UI Practices"
+TransparencyLevelHint="AcrylicBlur"
+ExtendClientAreaToDecorationsHint="True">
+  <StackPanel>
+    <ExperimentalAcrylicBorder IsHitTestVisible="False">
+      <ExperimentalAcrylicBorder.Material>
+        <ExperimentalAcrylicMaterial
+          BackgroundSource="None"
+          TintColor="#185efa"
+          TintOpacity="1"
+          MaterialOpacity="1" />
+      </ExperimentalAcrylicBorder.Material>
+    </ExperimentalAcrylicBorder>
+    <TextBlock
+      Margin="0 20"
+      HorizontalAlignment="Center"
+      FontWeight="Bold"
+      FontSize="20"
+      Text="UI PRACTICES"
+    />
+    <ItemsControl Items="{Binding ListItems}">
+      <ItemsControl.ItemsPanel>
+        <ItemsPanelTemplate>
+          <WrapPanel VerticalAlignment="Center" HorizontalAlignment="Center" />
+        </ItemsPanelTemplate>
+      </ItemsControl.ItemsPanel>
+      <ItemsControl.ItemTemplate>
+        <DataTemplate>
+          <controls:ButtonItemControl 
+            x:Name="ButtonItem"
+            Tag="{Binding Id}"
+            ImageLink="{Binding ImageLink}"
+            TitleText="{Binding TitleText}"
+            Tapped="OpenWindow"
+          />
+        </DataTemplate>
+      </ItemsControl.ItemTemplate>
+    </ItemsControl>
+  </StackPanel>
+</Window>

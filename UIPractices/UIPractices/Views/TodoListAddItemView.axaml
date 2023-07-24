@@ -1,0 +1,33 @@
+<UserControl
+  xmlns="https://github.com/avaloniaui"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  xmlns:vm="clr-namespace:UIPractices.ViewModels"
+  mc:Ignorable="d" d:DesignWidth="320" d:DesignHeight="500"
+  Width="320"
+  Height="500"
+  Background="DodgerBlue"
+  Foreground="Azure"
+  x:DataType="vm:TodoListAddItemViewModel"
+  x:Class="UIPractices.Views.TodoListAddItemView">
+  <DockPanel>
+    <Button 
+      DockPanel.Dock="Bottom" 
+      HorizontalAlignment="Stretch"
+      HorizontalContentAlignment="Center" 
+      Content="Cancel" 
+    />
+    <Button 
+      DockPanel.Dock="Bottom" 
+      HorizontalAlignment="Stretch"
+      HorizontalContentAlignment="Center" 
+      Content="OK" 
+    />
+    <TextBox 
+      AcceptsReturn="True"
+      Text="{Binding Description}"
+      Watermark="Enter your to do item"
+    />
+  </DockPanel>
+</UserControl>

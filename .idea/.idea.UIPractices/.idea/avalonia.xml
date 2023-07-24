@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="UIPractices/UIPractices/App.axaml" value="UIPractices/UIPractices.Browser/UIPractices.Browser.fsproj" />
+        <entry key="UIPractices/UIPractices/AutoWrite.axaml" value="UIPractices/UIPractices.Browser/UIPractices.Browser.fsproj" />
+        <entry key="UIPractices/UIPractices/ButtonItemControl.axaml" value="UIPractices/UIPractices.Browser/UIPractices.Browser.fsproj" />
+        <entry key="UIPractices/UIPractices/ButtonStyles.axaml" value="UIPractices/UIPractices.Desktop/UIPractices.Desktop.fsproj" />
+        <entry key="UIPractices/UIPractices/Controls/ButtonItemControl.axaml" value="UIPractices/UIPractices.Desktop/UIPractices.Desktop.fsproj" />
+        <entry key="UIPractices/UIPractices/FlatDashBoard.axaml" value="UIPractices/UIPractices.Browser/UIPractices.Browser.fsproj" />
+        <entry key="UIPractices/UIPractices/FlatDashBoardDiscoveryView.axaml" value="UIPractices/UIPractices.Browser/UIPractices.Browser.fsproj" />
+        <entry key="UIPractices/UIPractices/FlatDashboardHome.axaml" value="UIPractices/UIPractices.Browser/UIPractices.Browser.fsproj" />
+        <entry key="UIPractices/UIPractices/FlatTextBox.axaml" value="UIPractices/UIPractices.Browser/UIPractices.Browser.fsproj" />
+        <entry key="UIPractices/UIPractices/MainView.axaml" value="UIPractices/UIPractices.Browser/UIPractices.Browser.fsproj" />
+        <entry key="UIPractices/UIPractices/SliderView.axaml" value="UIPractices/UIPractices.Browser/UIPractices.Browser.fsproj" />
+        <entry key="UIPractices/UIPractices/Styles/ButtonResources.axaml" value="UIPractices/UIPractices.Browser/UIPractices.Browser.fsproj" />
+        <entry key="UIPractices/UIPractices/Styles/ButtonStyles.axaml" value="UIPractices/UIPractices.Desktop/UIPractices.Desktop.fsproj" />
+        <entry key="UIPractices/UIPractices/Styles/ColorResources.axaml" value="UIPractices/UIPractices.Browser/UIPractices.Browser.fsproj" />
+        <entry key="UIPractices/UIPractices/Styles/ColorStyles.axaml" value="UIPractices/UIPractices.Browser/UIPractices.Browser.fsproj" />
+        <entry key="UIPractices/UIPractices/Styles/FlatTextBox.axaml" value="UIPractices/UIPractices.Browser/UIPractices.Browser.fsproj" />
+        <entry key="UIPractices/UIPractices/Styles/MainStyles.axaml" value="UIPractices/UIPractices.Browser/UIPractices.Browser.fsproj" />
+        <entry key="UIPractices/UIPractices/Styles/MenuButton.axaml" value="UIPractices/UIPractices.Desktop/UIPractices.Desktop.fsproj" />
+        <entry key="UIPractices/UIPractices/Styles/TextBox.axaml" value="UIPractices/UIPractices.Desktop/UIPractices.Desktop.fsproj" />
+        <entry key="UIPractices/UIPractices/ViewModels/MenuButton.axaml" value="UIPractices/UIPractices.Browser/UIPractices.Browser.fsproj" />
+        <entry key="UIPractices/UIPractices/Views/AutoWriteView.axaml" value="UIPractices/UIPractices.Desktop/UIPractices.Desktop.fsproj" />
+        <entry key="UIPractices/UIPractices/Views/AutoWriteWindow.axaml" value="UIPractices/UIPractices.Desktop/UIPractices.Desktop.fsproj" />
+        <entry key="UIPractices/UIPractices/Views/Beginner/AutoWriteView.axaml" value="UIPractices/UIPractices.Desktop/UIPractices.Desktop.fsproj" />
+        <entry key="UIPractices/UIPractices/Views/Beginner/AutoWriteWindow.axaml" value="UIPractices/UIPractices.Desktop/UIPractices.Desktop.fsproj" />
+        <entry key="UIPractices/UIPractices/Views/Beginner/CalculatorView.axaml" value="UIPractices/UIPractices.Browser/UIPractices.Browser.fsproj" />
+        <entry key="UIPractices/UIPractices/Views/Beginner/CalculatorWindow.axaml" value="UIPractices/UIPractices.Browser/UIPractices.Browser.fsproj" />
+        <entry key="UIPractices/UIPractices/Views/Beginner/FlatDashBoardView.axaml" value="UIPractices/UIPractices.Browser/UIPractices.Browser.fsproj" />
+        <entry key="UIPractices/UIPractices/Views/Beginner/FlatDashBoardWindow.axaml" value="UIPractices/UIPractices.Desktop/UIPractices.Desktop.fsproj" />
+        <entry key="UIPractices/UIPractices/Views/Beginner/FlatDashboardHome.axaml" value="UIPractices/UIPractices.Desktop/UIPractices.Desktop.fsproj" />
+        <entry key="UIPractices/UIPractices/Views/Beginner/SliderView.axaml" value="UIPractices/UIPractices.Browser/UIPractices.Browser.fsproj" />
+        <entry key="UIPractices/UIPractices/Views/Beginner/SliderWindow.axaml" value="UIPractices/UIPractices.Browser/UIPractices.Browser.fsproj" />
+        <entry key="UIPractices/UIPractices/Views/Beginner/TodoListAddItemView.axaml" value="UIPractices/UIPractices.Desktop/UIPractices.Desktop.fsproj" />
+        <entry key="UIPractices/UIPractices/Views/Beginner/TodoListView.axaml" value="UIPractices/UIPractices.Desktop/UIPractices.Desktop.fsproj" />
+        <entry key="UIPractices/UIPractices/Views/Beginner/TodolistWindow.axaml" value="UIPractices/UIPractices.Desktop/UIPractices.Desktop.fsproj" />
+        <entry key="UIPractices/UIPractices/Views/CalculatorView.axaml" value="UIPractices/UIPractices.Browser/UIPractices.Browser.fsproj" />
+        <entry key="UIPractices/UIPractices/Views/CalculatorWindow.axaml" value="UIPractices/UIPractices.Browser/UIPractices.Browser.fsproj" />
+        <entry key="UIPractices/UIPractices/Views/FlatDashBoardHomeView.axaml" value="UIPractices/UIPractices.Desktop/UIPractices.Desktop.fsproj" />
+        <entry key="UIPractices/UIPractices/Views/FlatDashBoardView.axaml" value="UIPractices/UIPractices.Browser/UIPractices.Browser.fsproj" />
+        <entry key="UIPractices/UIPractices/Views/FlatDashBoardWindow.axaml" value="UIPractices/UIPractices.Desktop/UIPractices.Desktop.fsproj" />
+        <entry key="UIPractices/UIPractices/Views/FlatDashboardHomeView.axaml" value="UIPractices/UIPractices.Desktop/UIPractices.Desktop.fsproj" />
+        <entry key="UIPractices/UIPractices/Views/MainView.axaml" value="UIPractices/UIPractices.Desktop/UIPractices.Desktop.fsproj" />
+        <entry key="UIPractices/UIPractices/Views/MainWindow.axaml" value="UIPractices/UIPractices.Desktop/UIPractices.Desktop.fsproj" />
+        <entry key="UIPractices/UIPractices/Views/SliderView.axaml" value="UIPractices/UIPractices.Browser/UIPractices.Browser.fsproj" />
+        <entry key="UIPractices/UIPractices/Views/SliderWindow.axaml" value="UIPractices/UIPractices.Browser/UIPractices.Browser.fsproj" />
+        <entry key="UIPractices/UIPractices/Views/TodoListView.axaml" value="UIPractices/UIPractices.Desktop/UIPractices.Desktop.fsproj" />
+        <entry key="UIPractices/UIPractices/Views/TodolistWindow.axaml" value="UIPractices/UIPractices.Desktop/UIPractices.Desktop.fsproj" />
+        <entry key="UIPractices/UIPractices/demo.axaml" value="UIPractices/UIPractices.Browser/UIPractices.Browser.fsproj" />
+      </map>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,26 @@
+<Application 
+xmlns="https://github.com/avaloniaui"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+xmlns:local="using:UIPractices"
+x:Class="UIPractices.App"
+RequestedThemeVariant="Default">
+  <Application.Resources>
+    <ResourceDictionary>
+      <ResourceDictionary.MergedDictionaries>
+        <ResourceInclude Source="/Styles/ColorResources.axaml" />
+        <ResourceInclude Source="/Styles/ButtonResources.axaml" />
+      </ResourceDictionary.MergedDictionaries>
+    </ResourceDictionary>
+  </Application.Resources>
+
+  <Application.DataTemplates>
+    <local:ViewLocator/>
+  </Application.DataTemplates>
+
+  <Application.Styles>
+    <FluentTheme />
+    <StyleInclude Source="Styles/ButtonStyles.axaml" />
+    <StyleInclude Source="Controls/ButtonItemControl.axaml"/>
+    <StyleInclude Source="Styles/MenuButton.axaml" />
+  </Application.Styles>
+</Application>

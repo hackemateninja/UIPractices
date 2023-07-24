@@ -1,0 +1,37 @@
+<Window
+  xmlns="https://github.com/avaloniaui"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  mc:Ignorable="d" d:DesignWidth="700" d:DesignHeight="500"
+  Width="700"
+  Height="500"
+  Background="#FF05766C"
+  WindowStartupLocation="CenterOwner"
+  x:Class="UIPractices.Views.AutoWriteWindow">
+  <Grid>
+    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+      <TextBox
+        x:Name="TextBox0"
+        Width="500"
+        Height="250"
+        Background="#FF4F8E89"
+        Foreground="#FFD6F1EE"
+        TextWrapping="Wrap"
+        AcceptsReturn="True"
+        IsReadOnly="True"
+        FontSize="15"
+        Padding="10"
+      />
+      <Button 
+        HorizontalAlignment="Center"
+        Width="220"
+        Height="30"
+        Margin="15"
+        Content="Start auto write from clipboard"
+        Foreground="Azure"
+        Click="StartAutoWrite"
+      />
+    </StackPanel>
+  </Grid>
+</Window>

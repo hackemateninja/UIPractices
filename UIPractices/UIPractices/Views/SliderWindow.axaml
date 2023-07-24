@@ -1,0 +1,204 @@
+<Window
+xmlns="https://github.com/avaloniaui"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+mc:Ignorable="d" d:DesignWidth="320" d:DesignHeight="500"
+Width="320"
+Height="500"
+WindowStartupLocation="CenterOwner"
+ExtendClientAreaToDecorationsHint="True"
+Background="{DynamicResource BackGround}"
+x:Class="UIPractices.Views.SliderWindow">
+  <Grid ColumnDefinitions="Auto * Auto">
+    <Button Grid.Column="0" x:Name="BtnPrev" Classes="BtnPrev" Click="ClickPrev"/>
+    <Grid Grid.Column="1">
+      <Border 
+        Background="{DynamicResource BackGround}" 
+        CornerRadius="20"
+        Width="320"/>
+      <Slider
+        x:Name="Slider0"
+        Minimum="0"
+        Maximum="2"
+        TickPlacement="BottomRight"
+        TickFrequency="1"
+        IsVisible="False"
+        PropertyChanged="SliderChange"/>
+      <StackPanel x:Name="StackPanel" Margin="0 125">
+        <Grid 
+          x:Name="Grid0" 
+          IsVisible="True" 
+          RowDefinitions="*, *">
+          <Border 
+            Grid.Row="0" 
+            Height="250" 
+            Width="200" 
+            BorderThickness="5" 
+            CornerRadius="10"
+            BorderBrush="{DynamicResource ImgPass}"/>
+          <StackPanel Grid.Row="0" VerticalAlignment="Center">
+            <Image 
+              Source="/Assets/Icons/gamer.png" 
+              Width="180"
+              Height="180"
+              HorizontalAlignment="Center"
+              VerticalAlignment="Center"
+            />
+            <TextBlock 
+              HorizontalAlignment="Center"
+              VerticalAlignment="Center"
+              FontFamily="Roboto"
+              FontWeight="SemiBold"
+              Foreground="{DynamicResource Txt}"
+              Margin="0 30 0 5"
+              Text="G A M E R" 
+            />
+          </StackPanel>
+          <StackPanel 
+            Grid.Row="1" 
+            Orientation="Horizontal"
+            HorizontalAlignment="Center"
+            Margin="0 10 0 0">
+            <Ellipse 
+              Height="10" 
+              Width="10" 
+              Fill="Black"
+              Opacity="1"
+              Margin="1"
+            />
+            <Ellipse 
+              Height="10" 
+              Width="10" 
+              Fill="Black"
+              Opacity="0.25"
+              Margin="1"
+            />
+            <Ellipse 
+              Height="10" 
+              Width="10" 
+              Fill="Black"
+              Opacity="0.25"
+              Margin="1"
+            />
+          </StackPanel>
+        </Grid>
+        <Grid 
+          x:Name="Grid1" 
+          IsVisible="False"
+          RowDefinitions="*, *">
+          <Border 
+            Grid.Row="0" 
+            Height="250" 
+            Width="200" 
+            BorderThickness="5" 
+            CornerRadius="10"
+            BorderBrush="{DynamicResource ImgPass}"/>
+          <StackPanel Grid.Row="0" VerticalAlignment="Center">
+            <Image 
+              Source="/Assets/Icons/code.png" 
+              Width="180"
+              Height="180"
+              HorizontalAlignment="Center"
+              VerticalAlignment="Center"
+            />
+            <TextBlock 
+              HorizontalAlignment="Center"
+              VerticalAlignment="Center"
+              FontFamily="Roboto"
+              FontWeight="SemiBold"
+              Foreground="{DynamicResource Txt}"
+              Margin="0 30 0 5"
+              Text="D E V E L O P E R" 
+            />
+          </StackPanel>
+          <StackPanel 
+            Grid.Row="1" 
+            Orientation="Horizontal"
+            HorizontalAlignment="Center"
+            Margin="0 10 0 0">
+            <Ellipse 
+              Height="10" 
+              Width="10" 
+              Fill="Black"
+              Opacity="0.25"
+              Margin="1"
+            />
+            <Ellipse 
+              Height="10" 
+              Width="10" 
+              Fill="Black"
+              Opacity="1"
+              Margin="1"
+            />
+            <Ellipse 
+              Height="10" 
+              Width="10" 
+              Fill="Black"
+              Opacity="0.25"
+              Margin="1"
+            />
+          </StackPanel>
+        </Grid>
+        <Grid 
+          x:Name="Grid2" 
+          IsVisible="False"
+          RowDefinitions="*, *">
+          <Border 
+            Grid.Row="0" 
+            Height="250" 
+            Width="200" 
+            BorderThickness="5" 
+            CornerRadius="10"
+            BorderBrush="{DynamicResource ImgPass}"/>
+          <StackPanel Grid.Row="0" VerticalAlignment="Center">
+            <Image 
+              Source="/Assets/Icons/shop.png" 
+              Width="180"
+              Height="180"
+              HorizontalAlignment="Center"
+              VerticalAlignment="Center"
+            />
+            <TextBlock 
+              HorizontalAlignment="Center"
+              VerticalAlignment="Center"
+              FontFamily="Roboto"
+              FontWeight="SemiBold"
+              Foreground="{DynamicResource Txt}"
+              Margin="0 30 0 5"
+              Text="S E L L E R" 
+            />
+          </StackPanel>
+          <StackPanel 
+            Grid.Row="1" 
+            Orientation="Horizontal"
+            HorizontalAlignment="Center"
+            Margin="0 10 0 0">
+            <Ellipse 
+              Height="10" 
+              Width="10" 
+              Fill="Black"
+              Opacity="0.25"
+              Margin="1"
+            />
+            <Ellipse 
+              Height="10" 
+              Width="10" 
+              Fill="Black"
+              Opacity="0.25"
+              Margin="1"
+            />
+            <Ellipse 
+              Height="10" 
+              Width="10" 
+              Fill="Black"
+              Opacity="1"
+              Margin="1"
+            />
+          </StackPanel>
+        </Grid>
+      </StackPanel>
+    </Grid>
+    <Button Grid.Column="2" x:Name="BtnNext" Classes="BtnNext" Click="ClickNext" />
+  </Grid>
+</Window>

@@ -1,0 +1,49 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="using:UIPractices.Controls">
+  <Design.PreviewWith>
+    <Border Background="{DynamicResource PrimaryDark}">
+      <StackPanel Margin="20">
+        <controls:ButtonItemControl ImageLink="/Assets/calculator.png" TitleText="CALCULATOR" />
+      </StackPanel>
+    </Border>
+  </Design.PreviewWith>
+
+  <Style Selector="controls|ButtonItemControl">
+    <!-- Set Defaults -->
+    <Setter Property="Template">
+      <ControlTemplate>
+        <Button 
+          x:Name="ButtonItemControl"
+          Padding="10"
+          Margin="10"
+          Height="150"
+          Width="180"
+          Command="{TemplateBinding Command}"
+          CornerRadius="10">
+          <Button.Background>
+            <LinearGradientBrush>
+              <GradientStop Offset="0" Color="#0093E9"/>
+              <GradientStop Offset="1" Color="#80D0C7"/>
+            </LinearGradientBrush>
+          </Button.Background>
+          <StackPanel>
+            <Image 
+              Width="100"
+              Source="{TemplateBinding ImageLink}"
+            />
+            <TextBlock
+              Margin="10"
+              Text="{TemplateBinding TitleText}" 
+              FontSize="15"
+              HorizontalAlignment="Center"
+              Foreground="Azure"
+              FontWeight="SemiBold"
+            />
+          </StackPanel> 
+        </Button>
+      </ControlTemplate>
+    </Setter>
+  </Style>
+
+</Styles>

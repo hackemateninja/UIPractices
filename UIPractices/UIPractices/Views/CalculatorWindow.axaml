@@ -1,0 +1,66 @@
+<Window
+  xmlns="https://github.com/avaloniaui"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  mc:Ignorable="d" d:DesignWidth="320" d:DesignHeight="500"
+  Width="320" Height="500"
+  Background="Azure"
+  x:Class="UIPractices.Views.CalculatorWindow">
+  <StackPanel>
+    <Border 
+      Margin="5" 
+      CornerRadius="10" 
+      Background="LightBlue">
+      <TextBlock 
+        Margin="5" 
+        Foreground="Black" 
+        FontSize="24" 
+        HorizontalAlignment="Center" 
+        Text="Temperature Converter"
+      />
+    </Border>
+    <Grid ColumnDefinitions="160 160" RowDefinitions="Auto Auto Auto">
+      <Label 
+        Grid.Row="0" 
+        Grid.Column="0" 
+        Foreground="Black" 
+        VerticalAlignment="Center"  
+        Margin="10"
+        Content="Centigrade"/>
+      <TextBox 
+        Grid.Row="0" 
+        Grid.Column="1" 
+        x:Name="Cen"
+        Margin="5" />
+      <Label 
+        Grid.Row="1" 
+        Grid.Column="0" 
+        Foreground="Black" 
+        VerticalAlignment="Center" 
+        Margin="10" 
+        Content="Fahrenheit"/>
+      <TextBox 
+        Grid.Row="1"
+        Grid.Column="1"  
+        x:Name="Fa"
+        IsReadOnly="True"
+        Margin="5"/>
+      <Button 
+        Grid.Column="0"
+        Grid.Row="2"
+        Grid.ColumnSpan="2"
+        Width="310" 
+        Background="Cornsilk"
+        Foreground="Black"
+        BorderBrush="Black"
+        BorderThickness="1"
+        HorizontalContentAlignment="Center" 
+        Margin="0 5" 
+        HorizontalAlignment="Center"
+        Click="Calculate">
+        Calculate
+      </Button>
+    </Grid>
+  </StackPanel>
+</Window>

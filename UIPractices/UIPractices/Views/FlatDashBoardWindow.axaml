@@ -1,0 +1,73 @@
+<Window 
+xmlns="https://github.com/avaloniaui"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+xmlns:vm="clr-namespace:UIPractices.ViewModels"
+mc:Ignorable="d" d:DesignWidth="920" d:DesignHeight="600"
+TransparencyBackgroundFallback="Transparent"
+Width="900" Height="700"
+x:DataType="vm:FlatDashBoardViewModel"
+x:Class="UIPractices.Views.FlatDashBoardWindow"
+WindowStartupLocation="CenterOwner"
+ExtendClientAreaToDecorationsHint="True"
+Background="Transparent">
+  <Window.DataContext>
+    <vm:FlatDashBoardViewModel />
+  </Window.DataContext>
+  <Border 
+    Padding="0 30 0 0"
+    Background="#272537" 
+    CornerRadius="20">
+    <Grid ColumnDefinitions="200 *" RowDefinitions="75 *">
+      <TextBlock 
+        Grid.Row="0" 
+        Grid.Column="0"
+        Margin="20 0 0 0 "
+        VerticalAlignment="Center"
+        HorizontalAlignment="Left"
+        Foreground="White"
+        FontSize="22"
+        Text="Herman"
+      />
+      <StackPanel Grid.Row="1" Grid.Column="0">
+        <RadioButton 
+          Classes="MenuButton"
+          Content="Home"
+          IsChecked="True"
+          Command="{Binding ChangeToHomeViewCommand}"
+        />
+        <RadioButton 
+          Classes="MenuButton"
+          Content="Discovery"
+          Command="{Binding ChangeToDiscoveryViewCommand}"
+        />
+        <RadioButton 
+          Classes="MenuButton"
+          Content="Featured"
+          Command="{Binding ChangeToHomeViewCommand}"
+        />
+      </StackPanel>
+      <TextBox 
+        Grid.Row="0" 
+        Grid.Column="1" 
+        Watermark="Search"
+        Width="200"
+        Height="40"
+        CornerRadius="10"
+        VerticalContentAlignment="Center"
+        HorizontalAlignment="Left"
+        Background="#353340"
+        Padding="5"
+        Foreground="#CFCFCF"
+        Margin="5"
+      />
+      <ContentControl 
+        Grid.Row="1" 
+        Grid.Column="1"
+        Margin="10"
+        Content="{Binding CurrentView}">
+      </ContentControl>
+    </Grid>
+  </Border>
+</Window>
