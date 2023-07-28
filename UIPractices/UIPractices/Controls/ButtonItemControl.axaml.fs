@@ -1,11 +1,8 @@
 namespace UIPractices.Controls
 open System.Windows.Input
 open Avalonia
-open Avalonia.Controls
 open Avalonia.Controls.Primitives
 open Avalonia.Media.Imaging
-open Avalonia.Platform
-
 
 type ButtonItemControl() as x =
   inherit TemplatedControl()

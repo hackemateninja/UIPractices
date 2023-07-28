@@ -8,14 +8,14 @@ module Program =
     [<assembly: SupportedOSPlatform("browser")>]
     do ()
 
-    [<CompiledName "BuildAvaloniaApp">] 
-    let buildAvaloniaApp () = 
+    [<CompiledName "BuildAvaloniaApp">]
+    let buildAvaloniaApp () =
         AppBuilder
             .Configure<App>()
 
     [<EntryPoint>]
     let main argv =
         buildAvaloniaApp()
-            .SetupBrowserApp("out")
+           .UseBrowser()
             |> ignore
         0

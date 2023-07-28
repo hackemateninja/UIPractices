@@ -8,11 +8,11 @@ module Helpers =
   let createBitMap (path: string) =
     let uri = Uri($"avares://UIPractices/Assets/{path}")
     try
-        use stream  = AssetLoader.Open(uri)
-        Bitmap.DecodeToWidth(stream, 75)
+      use stream  = AssetLoader.Open(uri)
+      Bitmap.DecodeToWidth(stream, 75)
     with ex ->
-        printfn "Error al leer la imagen: %s" ex.Message
-        null
+      printfn "Error al leer la imagen: %s" ex.Message
+      null
 
 
 module MainWindowService =
