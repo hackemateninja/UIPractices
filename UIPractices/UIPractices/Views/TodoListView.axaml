@@ -10,7 +10,7 @@
   x:DataType="vm:TodoListViewModel"
   x:Class="UIPractices.Views.TodoListView">
   <UserControl.DataContext>
-    <vm:TodoListViewModel></vm:TodoListViewModel>
+    <vm:TodoListViewModel />
   </UserControl.DataContext>
   <DockPanel Margin="0 30 0 0">
     <TextBlock
